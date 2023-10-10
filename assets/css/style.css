@@ -1,0 +1,746 @@
+/* ==== google font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* ============ Utility ============ */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    background: url(../../images/body-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+p {
+    color: #fff;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.section_title {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.card_section {
+    padding: 30px;
+}
+
+/* ============ Header_section_style ============ */
+.header_section {
+    position: fixed;
+    box-shadow: 5px 5px 80px #272250;
+    padding: 50px 20px;
+    background: #3A3373;
+    border-radius: 0 0px 120px;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 780px;
+    height: 100%;
+    z-index: 99;
+    top: -45px;
+    left: 0;
+}
+
+.header_wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+}
+
+.logo {
+    margin-bottom: 60px;
+}
+
+ul.navbar {
+    line-height: 30px;
+    margin: 50px 0;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+ul.navbar li {
+    transform: rotate(-451deg);
+}
+
+ul.navbar a {
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+ul.navbar a:before {
+    position: absolute;
+    content: '';
+    z-index: 999;
+    width: 57%;
+    height: 4px;
+    bottom: 0;
+    margin-right: 5px;
+    right: 12px;
+    display: none;
+    background: #d214e6;
+    border-radius: 0px 0px 25px 0px;
+    transition: all 0.5s ease;
+}
+
+ul.navbar a:hover:before {
+    display: block;
+    transition: all 0.5s ease;
+}
+
+ul.navbar a.active:before {
+    display: block;
+    transition: all 0.5s ease;
+}
+
+ul.navbar a:hover i,
+ul.navbar a.active i {
+    color: #d214e6;
+}
+
+/* ============ Header_top_section ============ */
+.header_top_section {
+    padding: 30px;
+    height: 150px;
+    line-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_top {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header_top.flexWrap {
+    justify-content: end;
+}
+
+.search_option {
+    width: 380px;
+    border-bottom: 1px solid #D214E6;
+    padding: 5px;
+    height: 30px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_option input[type="search"] {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+}
+
+.search_option input::placeholder {
+    color: #fff;
+}
+
+.search_icon i {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header_btn_area {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+.header_btn_area button.btn {
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 8px;
+    transition: all 0.5s ease;
+}
+
+.header_btn_area button.btn::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #d214e6;
+    bottom: 0;
+    border-radius: 0px 0px 26px;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.header_btn_area button.btn:hover::before {
+    display: block;
+}
+
+/* ==============================================
+***** Left site  style Start
+================================================= */
+/*============= main wrapper =============*/
+.main_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.left_site {
+    width: 1020px;
+}
+
+/* ============ Header section style ============ */
+
+.hero_bg_1 {
+    background: url(../../images/heroBanner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    border-radius: 40px;
+    min-height: 280px;
+    box-shadow: 0px 0px 30px #302965;
+    overflow: hidden;
+    padding: 50px 40px;
+    object-fit: cover;
+}
+
+.hero_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero_content h1 {
+    font-size: 35px;
+    color: #fff;
+    line-height: 45px;
+}
+
+/* ============ Hero section style ============ */
+.hero_content p {
+    color: #a786c6;
+    padding: 20px 0;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.primary_btn {
+    background: linear-gradient(to right, #d61dd7, #e640a1);
+    padding: 15px 40px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hero_img {
+    position: relative;
+}
+
+
+
+/* ============ Group section style ============ */
+
+.section_title h1 {
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card_section {
+    background: url(../../images/card-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 80px 0;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px #302965;
+}
+
+
+
+.group_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+.gbg_1 {
+    background: url(../../images/group-card/card1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+.gbg_2 {
+    background: url(../../images/group-card/card2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.gbg_3 {
+    background: url(../../images/group-card/card3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.gbg_4 {
+    background: url(../../images/group-card/card4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+
+.single_group_card {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+
+.single_group_card img {
+    width: 80px;
+    margin-top: 60px;
+    border-radius: 50%;
+}
+
+.single_group_card p {
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+/* ============ Services section style ============ */
+.services_section {
+    margin-top: 80px;
+}
+
+.ser_bg {
+    background: url(../../images/ser_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.section_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single_ser_card {
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    position: relative;
+}
+
+.single_ser_card p {
+    background: linear-gradient(to right, #d61dd7, #e640a1);
+    padding: 10px;
+    bottom: 0;
+    position: absolute;
+    height: 65px;
+    text-align: center;
+    border-radius: 0 18px;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 600;
+}
+
+
+/* ============ process section style ============ */
+.process_section {
+    margin-top: 80px;
+}
+
+.process_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single_pro_card {
+    background: url(../../images/process/card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    position: relative;
+    box-shadow: 0px 0px 30px #22202F;
+}
+
+.process_card img {
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px #D214E6;
+}
+
+.process_card {
+    position: absolute;
+    top: 20%;
+    left: 38%;
+}
+
+.single_pro_card p {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* ============our client section style============ */
+
+.our_client_section {
+    background: url(../../images/client/client-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    margin: 80px 0;
+    border-radius: 40px;
+    min-height: 280px;
+    box-shadow: 0px 0px 30px #302965;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.single_client {
+    width: 100%;
+    position: relative;
+    margin-right: 20px;
+}
+
+.client_bg {
+    width: 100%;
+    position: relative;
+}
+
+.client_bg img {
+    width: 100%;
+}
+
+.client_text {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+/* ----- slick-arrow ------ */
+.client_wrapper .slick-arrow {
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    left: 93%;
+    top: -60%;
+    margin-top: 10px;
+    cursor: pointer;
+    right: 0;
+    border-radius: 50%;
+    border: 1px solid #756f9d;
+}
+
+.slick-arrow.slick-next {
+    left: auto;
+    right: 0px;
+}
+
+.client_wrapper ul.slick-dots {
+    display: none !important;
+}
+
+/* ==============================================
+***** Right site style Start
+================================================= */
+.right_site {
+    width: 380px;
+}
+
+/* ============Category_section_style============ */
+.category_list {
+    background: url(../../images/short-card/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px #302965;
+    overflow: hidden;
+    padding: 30px 15px;
+}
+
+.category_list .section_title h1,
+.nft_card .section_title h1 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.single_cate {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../../images/short-card/card-bg.png);
+    background-repeat: no-repeat;
+    min-height: 110px;
+    width: 100%;
+    background-size: cover;
+    padding: 15px 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.single_cate img {
+    width: 106px;
+    height: 91px;
+}
+
+.single_cate p {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* ============ NFT card section style============ */
+.nft_card {
+    margin-top: 45px;
+    background: url(../../images/short-card/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px #302965;
+}
+
+.nft_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nft_card .section_title p,
+.key_result_section .section_title p,
+.social_section .section_title p {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 25px;
+    color: #a482c3;
+}
+
+.nft_wrapper img {
+    height: 330px;
+}
+
+.nft_wrapper .primary_btn {
+    margin-top: 20px;
+}
+
+/* ============ Key result section style============ */
+.key_result_section {
+    margin-top: 45px;
+    background: url(../../images/short-card/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px #302965;
+}
+
+.key_result_section .section_title {
+    text-align: center;
+    line-height: 25px;
+}
+
+.key_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.single_key_card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../../images/short-card/bg3.png);
+    background-repeat: no-repeat;
+    min-height: 170px;
+    width: 100%;
+    background-size: cover;
+    padding: 15px 6px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 200px #7431b2;
+}
+
+.single_key_card img {
+    padding-top: 15px;
+}
+
+.single_key_card p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ============ Text Card section style ============ */
+.text_card {
+    margin-top: 45px;
+    background: url(../../images/text-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px #302965;
+}
+
+.text_wrapper {
+    padding: 35px 10px;
+    line-height: 35px;
+}
+
+.text_wrapper h1 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* ============ Social section style ============ */
+.social_section {
+    margin-top: 45px;
+    background: url(../../images/social_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 30px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px #302965;
+}
+
+.social_section .section_title {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+}
+
+.social_btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social_btn button {
+    border: none;
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    font-weight: normal;
+}
+
+.social_btn button span {
+    font-weight: 600;
+}
+
+.soci_btn_1 {
+    background: #5B2AD1;
+}
+
+.soci_btn_2 {
+    background: #D214E6;
+}
+
+.soci_btn_3 {
+    background: #EC4D8E;
+}
